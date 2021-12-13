@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+       display: flex;
+       width: 90%;
+       height: 14vh;
+       margin: auto;
+       align-items: center;
+}
+
+.logo-container, .nav-links, .logo1 {
+    display: flex;
+}
+
+.logo-container {
+
+    flex: 2;
+}
+
+.logo {
+    font-weight: 400;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    outline-color: black;
+}
+
+nav {
+
+    flex: 1;
+}
+.nav-links {
+    justify-content: space-between;
+    list-style: none;
+}
+.nav-link {
+    color: rgb(199, 199, 199);
+    text-decoration: none;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.cover img {
+    height: 60vh;
+    animation: drop 1.2s ease
+}
+
+.introduction {
+    flex: 1;
+}
+
+.cover {
+    flex: 1;
+    filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+}
+
+.intro-text h1 {
+    font: 24px;
+    font-weight: 500;
+    background: rgb(255, 255, 255);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+.intro-text p {
+    margin-top: 5px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.cta {
+    padding: 35px 0px 0px 0px;
+}
+
+.cta-select {
+    border: 1px solid #ff00e1;
+    background: #00c3ff;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    border-color: #00c3ff;
+    
+
+}
+
+.cta-select1 {
+    border: 3px solid #ff00e1;
+    background: #00c3ff;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    border-color: #00c3ff;
+   
+
+}
+
+.cta-select2 {
+    border: 3px solid #ff00e1;
+    background: #00c3ff;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    border-color: #00c3ff;
+    
+    
+
+}
+
+
+
+.logo-container h4 {
+    font-size: 20px;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 2vh;
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    outline-color: black;
+
+}
+
+@keyframes drop{
+        0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1024px){
+      .presentation {
+          flex-direction: column;
+      }
+    .introduction {
+        margin: 5vh;
+        text-align: center;
+    }
+    .intro-text h1 {
+        font-size: 30px;
+    }
+    .intro-text p {
+        font-size: 18px;
+    }
+    .cta {
+        padding: 10px 0px 0px 0px;
+    }
+}
+
+.videovid {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    height: 1080;
+    width: 1920;
+}
